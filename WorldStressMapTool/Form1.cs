@@ -907,12 +907,9 @@ namespace WorldStressMapTool
 
         public void Resize(Size size)
         {
-
             //    Bitmap = new Bitmap(size.Width, size.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
             Bitmap = new Bitmap(size.Width, size.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
             Graphics = Graphics.FromImage(Bitmap);
-
-
 
             Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
 
